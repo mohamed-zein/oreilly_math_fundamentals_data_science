@@ -38,7 +38,8 @@ $$
 ### Union Probabilities
 When we deal with **OR** operations with probabilities, this is known as a _union probability_.
 #### Mutually exclusive events
-* _Mutually exclusive_ events are events that cannot occur simulta‐ neously.
+* _Mutually exclusive_ events are events that cannot occur simultaneously.
+* For example, if I roll one die I cannot simultaneously get a 4 and a 6. I can only get one outcome.
 * To get the union probability for _mutually exclusive_ events, simply add them together.
 
 $$
@@ -67,4 +68,17 @@ $$
 
 $$
 P(A|B) = \frac{P(B|A)*P(A)}{P(B)}
+$$
+
+### Joint and Union Conditional Probabilities
+Our joint probability formula:
+
+$$
+\boxed{P(A \cap B) = P(B) \times P(A|B)}
+$$
+
+Our Union probability formula:
+
+$$
+\boxed{P(A \cup B ) = P(A) + P(B) - (P(A|B) \times P(B))}
 $$
