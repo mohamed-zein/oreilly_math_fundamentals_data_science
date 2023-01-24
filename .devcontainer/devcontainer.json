@@ -25,10 +25,13 @@
 				"GitHub.vscode-pull-request-github",
 				"VisualStudioExptTeam.vscodeintellicode",
 				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"mdickin.markdown-shortcuts",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
 				"ms-python.isort"
 			]
 		}
-	},
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
