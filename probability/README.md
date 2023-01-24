@@ -96,3 +96,17 @@ $$
 
 ## Beta Distribution
 * The _beta distribution_ allows us to see the likelihood of different underlying probabilities for an event to occur given _alpha_ successes and _beta_ failures.
+* A chart of the beta distribution given 8 successes and 2 failures is shown below:
+    * The x-axis represents all underlying rates of success from $0.0$ to $1.0$ (0% to 100%).
+    * The y-axis represents the likelihood of that probability given 8 successes and 2 failures.
+![Beta Distribution](./images/beta-distribution-01.jpg)  
+* The _beta distribution_ is a continuous function, meaning it forms a continuous curve of decimal values.
+* A given density value on the y-axis is not a probability. We instead find probabilities using areas under the curve.
+    * The _beta distribution_ is a type of probability distribution, which means the area under the entire curve is $1.0$, or 100%.
+* To find a probability, we need to find the area within a range.
+    * For example, if we want to evaluate the probability 8/10 successes would yield 90% or higher success rate, we need to find the area between 0.9 and 1.0, which is 0.225, as shaded in below figure:
+    ![The area between 90% and 100%, which is 22.5%](./images/beta-distribution-02.jpg)
+* Every continuous probability distribution has a _cumulative density function_ (CDF), which calculates the area up to a given x-value.
+    * It is easy enough to use SciPy with its `beta.cdf()` function which calculates area only to the left of our boundary, not the right.
+    ![Calculating the area up to 90% (0.0 to 0.90)](./images/beta-distribution-03.jpg)  
+    
