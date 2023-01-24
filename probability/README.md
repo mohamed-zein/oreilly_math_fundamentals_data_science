@@ -82,3 +82,17 @@ Our Union probability formula:
 $$
 \boxed{P(A \cup B ) = P(A) + P(B) - (P(A|B) \times P(B))}
 $$
+
+## Binomial Distribution
+* The _binomial distribution_ measures how likely $k$ successes can happen out of $n$ trials given $p$ probability.
+    * Assuning we the underlying probability of an experiment is 90% so _binomial distribution_ helps us determine the likelihood of 80% success.
+    * If we add up the probability of eight or fewer successes (80% success), we would get 0.2639. This means there is a 26.39% chance we would see 80% or fewer successes even if the underlying success rate is 90%.
+    ![binomial distribution](./images/binomial-distribution.jpg)
+* The formula for _binomial distribution_
+
+$$
+\text{Binomial distribution} = \frac{n!}{k! \times (n-k)!} \cdot p^{k} \cdot (1-p)^{n-k}
+$$
+
+## Beta Distribution
+* The _beta distribution_ allows us to see the likelihood of different underlying probabilities for an event to occur given _alpha_ successes and _beta_ failures.
