@@ -56,4 +56,12 @@ $$
     > **The Median Is a Quantile**  
     > There is a concept of _quantiles_ in descriptive statistics. The concept of quantiles is essentially the same as a median, just cutting the data in other places besides the middle. The median is actually the 50% quantile, or the value where 50% of ordered values are behind it. Then there are the 25%, 50%, and 75% quantiles, which are known as _quartiles_ because they cut data in 25% increments.
 
+### Mode
+* The _mode_ is the most frequently occurring set of values.
+* It primarily becomes useful when your data is repetitive and you want to find which values occur the most frequently.
+    * When no value occurs more than once, there is no mode.
+    * When two values occur with an equal amount of frequency, then the dataset is considered _bimodal_.
+* In practicality, the _mode_ is not used a lot unless your data is repetitive.
+* This is commonly encountered with integers, categories, and other discrete variables.
+
 [<<Previous](../probability/README.md) | [Next>>]()
