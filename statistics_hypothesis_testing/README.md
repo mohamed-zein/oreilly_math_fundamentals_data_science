@@ -129,5 +129,11 @@ The CDF, which is an S-shaped curve (called a sigmoid curve), projects the area 
 
 ![A PDF alongside its CDF](./images/normal-distribution-03.jpg)
 
+### The Inverse CDF
+* **The Inverse CDF** enables us to look up an area on the CDF and then return the corresponding x-value.
+* The **Inverse CDF**, also called the _PPF_ or _quantile function_
+
+![The Inverse CDF](./images/inverse-cdf.jpg)
+
 
 [<<Previous](../probability/README.md) | [Next>>]()
