@@ -99,4 +99,35 @@ $$
     * By counting values short of one item in our divisor, we increase the variance and therefore capture greater uncertainty in our sample.
 
 
+### The Normal Distribution
+The _normal distribution_, also known as the _Gaussian distribution_, is a symmetrical bell-shaped distribution that has most mass around the mean, and its spread is defined as a standard deviation. The "tails" on either side become thinner as you move away from the mean.  
+![A normal distribution](./images/normal-distribution-01.jpg)
+
+#### Properties of a Normal Distribution
+* It’s symmetrical; both sides are identically mirrored at the mean, which is the center.
+* Most mass is at the center around the mean.
+* It has a spread (being narrow or wide) that is specified by standard deviation.
+* The _tails_ are the least likely outcomes and approach zero infinitely but never touch zero.
+* It resembles a lot of phenomena in nature and daily life, and even generalizes non-normal problems because of the central limit theorem.
+
+#### The Probability Density Function (PDF)
+* The [standard deviation](#variance-and-standard-deviation) plays an important role in the normal distribution, because it defines how **spread out** it is.
+* The **probability density function (PDF)** that creates the normal distribution is as follows:
+
+$$
+f(x) = \frac{1}{\sigma} \cdot \sqrt{2 \pi} \cdot e^{- \frac{1}{2} \left(\frac{x-\mu^{2}}{\sigma
+} \right)}
+$$
+
+#### The Cumulative Distribution Function (CDF)
+* With the normal distribution, the vertical axis is not the probability but rather the likelihood for the data.
+* To find the probability we need to look at a given range, and then find the area under the curve for that range.  
+![A CDF measuring probability between 62 and 66 pounds](./images/normal-distribution-02.jpg)
+
+##### A PDF vs CDF
+The CDF, which is an S-shaped curve (called a sigmoid curve), projects the area up to that range in the PDF.
+
+![A PDF alongside its CDF](./images/normal-distribution-03.jpg)
+
+
 [<<Previous](../probability/README.md) | [Next>>]()
