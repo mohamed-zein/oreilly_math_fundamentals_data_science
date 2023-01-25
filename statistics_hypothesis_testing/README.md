@@ -64,4 +64,39 @@ $$
 * In practicality, the _mode_ is not used a lot unless your data is repetitive.
 * This is commonly encountered with integers, categories, and other discrete variables.
 
+### Variance and Standard Deviation
+There are some calculation differences for the sample versus the population.
+#### Population Variance and Standard Deviation
+* In describing data, we are often interested in measuring the differences between the _mean_ and every data point. This gives us a sense of how **spread out** the data is.
+* The _variance_ is a measure of how spread out our data is.
+    * A higher variance means more spread.
+$$
+\begin{align*}
+\text{population variance} & = \frac{(x_{1} - mean)^{2} + (x_{2} - mean)^{2} + \cdots + (x_{n} - mean)^{2}}{N} \\
+\sigma^{2} & = \frac{\sum{(x_{i} - \mu)^{2}}}{N}
+\end{align*}
+$$
+
+* This _population variance_ is larger than any of our observations because we did a lot squaring and summing, putting it on an entirely different metric.
+* The _standard deviation_ is the variance scaled into a number expressed in similar scale to our observations which makes it a bit more meaningful:
+
+$$
+\sigma = \sqrt{\frac{\sum{(x_{i} - \mu)^{2}}}{N}}
+$$
+
+#### Sample Variance and Standard Deviation
+There is an important tweak we need to apply to these two formulas when we calculate for a **sample**:
+
+$$
+\begin{align*}
+s^{2} & = \frac{\sum{(x_{i} - \overline{x})^{2}}}{n-1} \\
+s & = \sqrt{\frac{\sum{(x_{i} - \overline{x})^{2}}}{n-1} \\}
+\end{align*}
+$$
+
+* we divide by $n–1$ rather than the total number of items $n$.
+    * We do this to decrease any bias in a sample and not underestimate the variance of the population based on our sample.
+    * By counting values short of one item in our divisor, we increase the variance and therefore capture greater uncertainty in our sample.
+
+
 [<<Previous](../probability/README.md) | [Next>>]()
