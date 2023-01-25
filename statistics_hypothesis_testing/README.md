@@ -19,4 +19,32 @@ _Statistics_ is the practice of collecting and analyzing data to discover findin
         * _Confirmation bias_ is gathering only data that supports your belief, which can even be done unknowingly.
         * _Survival bias_ captures only living and survived subjects, while the deceased ones are never accounted for.
 
+----------
+
+## Descriptive Statistics
+### Mean and Weighted Mean
+#### Mean
+* The _mean_ is the average of a set of values.
+    * Sum the values and divide by the number of values.
+    * The _mean_ is useful because it shows where the **center of gravity** exists for an observed set of values.
+* There are two versions of the mean you will see: the sample mean $\overline{x}$ and the population mean $\mu$ as expressed here:
+
+$$
+\begin{align*}
+\overline{x} & = \frac{x_{1} + x_{2} + x_{3} + \cdots + x_{n}}{n} = \sum{\frac{x_{i}}{n}} \\
+\mu & = \frac{x_{1} + x_{2} + x_{3} + \cdots + x_{n}}{N} = \sum{\frac{x_{i}}{N}} \\
+\text{Where: } & \\
+
+& n \text{ represents sample size } \\
+& N \text{ represents the population size}
+\end{align*}
+$$
+
+#### Weighted Mean
+_Weighted Mean_ is actually a weighted average in which we give each item a different weight.
+
+$$
+\text{weighted mean} = \frac{(x_{1} \cdot w_{1}) + (x_{2} \cdot w_{2}) + (x_{3} \cdot w_{3}) + \cdots + (x_{n} \cdot w_{n})}{w_{1} + w_{2} + w_{3} + \cdots + w_{n}}
+$$
+
 [<<Previous](../probability/README.md) | [Next>>]()
