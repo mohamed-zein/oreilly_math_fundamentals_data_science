@@ -47,4 +47,13 @@ $$
 \text{weighted mean} = \frac{(x_{1} \cdot w_{1}) + (x_{2} \cdot w_{2}) + (x_{3} \cdot w_{3}) + \cdots + (x_{n} \cdot w_{n})}{w_{1} + w_{2} + w_{3} + \cdots + w_{n}}
 $$
 
+### Median
+* The _median_ is the middlemost value in a set of ordered values.
+* We sequentially order the values, and the _median_ will be the centermost value.
+* The _median_ can be a helpful alternative to the mean when data is skewed by _outliers_, or values that are extremely large and small compared to the rest of the values.
+* When your _median_ is very different from your _mean_, that means you have a skewed dataset with outliers.
+
+    > **The Median Is a Quantile**  
+    > There is a concept of _quantiles_ in descriptive statistics. The concept of quantiles is essentially the same as a median, just cutting the data in other places besides the middle. The median is actually the 50% quantile, or the value where 50% of ordered values are behind it. Then there are the 25%, 50%, and 75% quantiles, which are known as _quartiles_ because they cut data in 25% increments.
+
 [<<Previous](../probability/README.md) | [Next>>]()
