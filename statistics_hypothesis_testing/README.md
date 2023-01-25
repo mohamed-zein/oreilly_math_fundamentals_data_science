@@ -135,5 +135,19 @@ The CDF, which is an S-shaped curve (called a sigmoid curve), projects the area 
 
 ![The Inverse CDF](./images/inverse-cdf.jpg)
 
+### Z-Scores
+* The _standard normal distribution_ is to rescale a normal distribution so that the **mean is 0** and the **standard deviation is 1**.
+* Standard normal distribution expresses all x-values in terms of standard deviations known as **Z-scores**.
+* Turning an x-value into a Z-score uses a basic scaling formula:
+
+$$
+z = \frac{x - \mu}{\sigma}
+$$
+
+> **Coefficient of Variation**  
+> * A helpful tool for measuring spread is the coefficient of variation.
+> * It compares two distributions and quantifies how spread out each of them is.
+> $$\mathrm{cv} = \frac{\sigma}{\mu}$$
+
 
 [<<Previous](../probability/README.md) | [Next>>]()
