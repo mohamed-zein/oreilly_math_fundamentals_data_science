@@ -110,3 +110,4 @@ $$
     * It is easy enough to use SciPy with its `beta.cdf()` function which calculates area only to the left of our boundary, not the right.
     ![Calculating the area up to 90% (0.0 to 0.90)](./images/beta-distribution-03.jpg)  
     
+[<<Previous](../README.md) | [Next>>](../statistics_hypothesis_testing/README.md)
