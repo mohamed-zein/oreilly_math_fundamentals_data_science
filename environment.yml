@@ -11,6 +11,8 @@ dependencies:
   - sympy
   - scikit-learn
   - plotly
+  - pandas
+  - nbformat
 # variables:
 #   VAR1: valueA
 #   VAR2: valueB
