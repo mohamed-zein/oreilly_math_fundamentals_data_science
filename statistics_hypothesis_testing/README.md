@@ -186,6 +186,13 @@ $$
 * Python code to calculate the confidence interval [here](./15_confidence_interval.py)
 
 > **Note:**  
-> our sample size must be at least 31 items. This goes back to the central   limit theorem. If we want to apply a confidence interval to a smaller sample, we need to use a distribution with higher variance (fatter tails reflecting more uncertainty). This is what the T-distribution is for,
+> our sample size must be at least 31 items. This goes back to the central   limit theorem. If we want to apply a confidence interval to a smaller sample, we need to use a distribution with higher variance (fatter tails reflecting more uncertainty). This is what the T-distribution is for.
+
+### Understanding P-Values
+* **P-value**: the probability of something occurring by chance rather than because of a hypothesized explanation.
+* When we frame an experiment,we always have to entertain the possibility that random luck played a role.
+* _null hypothesis (H0)_, saying that the variable in question had no impact on the experiment and any positive results are just random luck.
+* The _alternative hypothesis (H1)_ poses that a variable in question (called the _controlled variable_) is causing a positive result.
+* Traditionally, the threshold for statistical significance is a p-value of 5% or less. 
 
 [<<Previous](../probability/README.md) | [Next>>]()
