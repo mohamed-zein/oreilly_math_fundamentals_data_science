@@ -1,9 +1,10 @@
 # Chapter 2: Descriptive and Inferential Statistics
 _Statistics_ is the practice of collecting and analyzing data to discover findings that are useful or predict what causes those findings to happen.
-## Descriptive Versus Inferential Statistics
+## What is Data?
+### Descriptive Versus Inferential Statistics
 * _Descriptive Statistics_ is the branch we use to summarize data; calculating mean, median, mode, charts, bell curves, and other tools to describe data.
 * _Inferential Statistics_ is the branch that tries to uncover attributes about a larger population, often based on a sample.
-## Populations, Samples, and Bias
+### Populations, Samples, and Bias
 * A **Population** is a particular group of interest we want to study, such as _all seniors over the age of 65 in the North America_, _all golden retrievers in Scotland_, or _current high school sophomores at Los Altos High School_.
     * We have boundaries on defining our population.
     * Some of these boundaries are broad and capture a large group over a vast geography or age group.
@@ -148,6 +149,24 @@ $$
 > * A helpful tool for measuring spread is the coefficient of variation.
 > * It compares two distributions and quantifies how spread out each of them is.
 > $$\mathrm{cv} = \frac{\sigma}{\mu}$$
+
+----------
+## Inferential Statistics
+When we get into inferential statistics the abstract relationships between sample and population come into full play.
+### The Central Limit Theorem
+* The **Central Limit Theorem** states that interesting things happen when we take large enough samples of a population, calculate the mean of each, and plot them as a distribution:
+    1. The mean of the sample means is equal to the population mean.
+    2. If the population is normal, then the sample means will be normal.
+    3. If the population is not normal, but the sample size is greater than 30, the sample means will still roughly form a normal distribution.
+    4. The standard deviation of the sample means equals the population standard deviation divided by the square root of $n$:
+
+$$
+\text{sample standard deviation} = \frac{\text{population standard deviation}}{\sqrt{\text{sample size}}}
+$$
+
+![Larger sample sizes approach the normal distribution](./images/central-limit-theorem.jpg)
+* $31$ is the textbook number in statistics because that is when our sample distribution often converges onto the population distribution, particularly when we measure sample means or other parameters.
+* When the sample is fewer than 31 items, that is when we have to rely on the _T-distribution_ rather than the normal distribution, which has increasingly fatter tails the smaller your sample size.
 
 
 [<<Previous](../probability/README.md) | [Next>>]()
