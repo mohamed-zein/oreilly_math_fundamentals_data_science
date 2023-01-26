@@ -91,7 +91,7 @@ There is an important tweak we need to apply to these two formulas when we calcu
 $$
 \begin{align*}
 s^{2} & = \frac{\sum{(x_{i} - \overline{x})^{2}}}{n-1} \\
-s & = \sqrt{\frac{\sum{(x_{i} - \overline{x})^{2}}}{n-1} \\}
+s & = \sqrt{\frac{\sum{(x_{i} - \overline{x})^{2}}}{n-1}}
 \end{align*}
 $$
 
@@ -167,6 +167,25 @@ $$
 ![Larger sample sizes approach the normal distribution](./images/central-limit-theorem.jpg)
 * $31$ is the textbook number in statistics because that is when our sample distribution often converges onto the population distribution, particularly when we measure sample means or other parameters.
 * When the sample is fewer than 31 items, that is when we have to rely on the _T-distribution_ rather than the normal distribution, which has increasingly fatter tails the smaller your sample size.
+### Confidence Intervals
+* A **confidence interval** is a range calculation showing how confidently we believe a sample mean (or other parameter) falls in a range for the population mean.
+    1. Start out by choosing a _level of confidence (LOC)_, which will contain the desired probability for the population mean range (i.e. 95%).
+    2. Calculate the _critical z-value_ which is the symmetrical range in a standard normal distribution that gives me _LOC_ (i.e. 95%) probability in the center as highlighted in Figure below:
+    ![95% symmetrical probability in the center of a standard normal distribution](./images/confidence-intervals-01.jpg)
+        * We leverage the [inverse CDF](#the-inverse-cdf). Therefore, the areas we want to look up the x-values for are $0.025$ and $0.975$ as shown in Figure:
+        ![We want the x-values that give us areas .025 and .975](./images/confidence-intervals-02.jpg)
+        * We can look up the x-value for area $0.025$ and the x-value for area $0.975$, and that will give us our center range containing 95% of the area.
+    3. Then we leverage the [central limit theorem](#the-central-limit-theorem) to produce the _margin of error (E)_
+        * **margin of error (E)**: the range around the sample mean that contains the population mean at that _level of confidence LOC_.
+        * The formula to get this margin of error is:
 
+       $$
+       E = \pm z_{c} \frac{s}{\sqrt{n}}
+       $$
+
+* Python code to calculate the confidence interval [here](./15_confidence_interval.py)
+
+> **Note:**  
+> our sample size must be at least 31 items. This goes back to the central   limit theorem. If we want to apply a confidence interval to a smaller sample, we need to use a distribution with higher variance (fatter tails reflecting more uncertainty). This is what the T-distribution is for,
 
 [<<Previous](../probability/README.md) | [Next>>]()
