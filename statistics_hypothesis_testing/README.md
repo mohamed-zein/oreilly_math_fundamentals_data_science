@@ -179,9 +179,9 @@ $$
         * **margin of error (E)**: the range around the sample mean that contains the population mean at that _level of confidence LOC_.
         * The formula to get this margin of error is:
 
-       $$
-       E = \pm z_{c} \frac{s}{\sqrt{n}}
-       $$
+$$
+E = \pm z_{c} \frac{s}{\sqrt{n}}
+$$
 
 * Python code to calculate the confidence interval [here](./15_confidence_interval.py)
 
