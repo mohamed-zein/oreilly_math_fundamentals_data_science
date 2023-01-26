@@ -32,11 +32,10 @@ _Statistics_ is the practice of collecting and analyzing data to discover findin
 
 $$
 \begin{align*}
-\overline{x} & = \frac{x_{1} + x_{2} + x_{3} + \cdots + x_{n}}{n} = \sum{\frac{x_{i}}{n}} \\
-\mu & = \frac{x_{1} + x_{2} + x_{3} + \cdots + x_{n}}{N} = \sum{\frac{x_{i}}{N}} \\
-\text{Where: } & \\
-
-& n \text{ represents sample size } \\
+\overline{x} & = \frac{x_{1} + x_{2} + x_{3} + \cdots + x_{n}}{n} = \sum{\frac{x_{i}}{n}} \newline
+\mu & = \frac{x_{1} + x_{2} + x_{3} + \cdots + x_{n}}{N} = \sum{\frac{x_{i}}{N}} \newline
+\text{Where: } & \newline
+& n \text{ represents sample size } \newline
 & N \text{ represents the population size}
 \end{align*}
 $$
@@ -71,9 +70,10 @@ There are some calculation differences for the sample versus the population.
 * In describing data, we are often interested in measuring the differences between the _mean_ and every data point. This gives us a sense of how **spread out** the data is.
 * The _variance_ is a measure of how spread out our data is.
     * A higher variance means more spread.
+
 $$
 \begin{align*}
-\text{population variance} & = \frac{(x_{1} - mean)^{2} + (x_{2} - mean)^{2} + \cdots + (x_{n} - mean)^{2}}{N} \\
+\text{population variance} & = \frac{(x_{1} - mean)^{2} + (x_{2} - mean)^{2} + \cdots + (x_{n} - mean)^{2}}{N} \newline
 \sigma^{2} & = \frac{\sum{(x_{i} - \mu)^{2}}}{N}
 \end{align*}
 $$
