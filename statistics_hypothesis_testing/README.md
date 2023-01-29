@@ -193,6 +193,27 @@ $$
 * When we frame an experiment,we always have to entertain the possibility that random luck played a role.
 * _null hypothesis (H0)_, saying that the variable in question had no impact on the experiment and any positive results are just random luck.
 * The _alternative hypothesis (H1)_ poses that a variable in question (called the _controlled variable_) is causing a positive result.
-* Traditionally, the threshold for statistical significance is a p-value of 5% or less. 
+* Traditionally, the threshold for statistical significance is a p-value of 5% or less.
+
+### Hypothesis Testing
+When testing a hypothesis we define:
+1. **Null hypothesis $H_{0}$**: the results of an experiment is a coincidence with the test group.
+2. **Alternate hypothesis $H_{1}$**: the experiment is showing a statistically signficant result.
+
+There are two ways we can calculate this: the [one-tailed](#one-tailed-test) and [two-tailed](#two-tailed-test) test.
+#### One-Tailed Test
+* When we approach the one-tailed test, we typically frame our null and alternative hypotheses using inequalities around the _mean_.
+* To reject our null hypothesis $H_{0}$, we need to show that our sample mean is not likely to have been coincidental.
+* Since a p-value of $0.05$ or less is traditionally considered statistically signficant, we will use that as our threshold.
+We utilize [the inverse CDF](#the-inverse-cdf) and [The Probability Density Function (PDF)](#the-probability-density-function-pdf)
+#### Two-Tailed Test
+* The [one-tailed test](#one-tailed-test) is called _one-tailed_ because it looks for statistical significance only on one tail.
+* To do a two-tailed test, we frame our null and alternative hypothesis in an **equal** and **not equal** structure.
+* We are structuring our alternative hypothesis $H_{1}$ to test whether the experiment had **any** impact.
+    * This means we spread our p-value statistical significance threshold to both tails, not just one.
+    * If we are testing for a statistical significance of 5%, then we split it and give each 2.5% half to each tail.
+    * If our experiment result falls in either region, our test is successful and we reject the null hypothesis.
+    ![A two-tailed test](./images/two-tailed-test-01.jpg)
+* The two-tailed test makes it harder to reject the null hypothesis and demands stronger evidence to pass a test.
 
 [<<Previous](../probability/README.md) | [Next>>]()
