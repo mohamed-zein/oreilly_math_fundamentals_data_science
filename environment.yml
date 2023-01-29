@@ -1,7 +1,8 @@
 name: base
-# channels:
-#   - conda-forge
-#   - defaults
+channels:
+  - defaults
+  - conda-forge
+  - plotly
 dependencies:
   - ipykernel
   - matplotlib
@@ -9,6 +10,9 @@ dependencies:
   - scipy
   - sympy
   - scikit-learn
+  - plotly
+  - pandas
+  - nbformat
 # variables:
 #   VAR1: valueA
 #   VAR2: valueB
