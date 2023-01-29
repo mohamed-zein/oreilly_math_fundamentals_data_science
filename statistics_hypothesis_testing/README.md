@@ -216,4 +216,11 @@ We utilize [the inverse CDF](#the-inverse-cdf) and [The Probability Density Func
     ![A two-tailed test](./images/two-tailed-test-01.jpg)
 * The two-tailed test makes it harder to reject the null hypothesis and demands stronger evidence to pass a test.
 
+## The T-Distribution
+* If we have **30 or fewer items** in a sample we would opt to use a _T-distribution_ instead of a normal distribution.
+* The _T-distribution_ is like a normal distribution but has fatter tails to reflect more variance and uncertainty.
+![The T-distribution alongside a normal distribution; note the fatter tails](./images/t-distribution-01.jpg)
+* The smaller the sample size, the fatter the tails get in a _T-distribution_.
+* After you approach 31 items, the _T-distribution_ is nearly indistinguishable from the [normal distribution](#the-normal-distribution), which neatly reflects the ideas behind the [central limit theorem](#the-central-limit-theorem).
+
 [<<Previous](../probability/README.md) | [Next>>]()
