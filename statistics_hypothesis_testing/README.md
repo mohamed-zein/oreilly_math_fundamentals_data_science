@@ -223,4 +223,4 @@ We utilize [the inverse CDF](#the-inverse-cdf) and [The Probability Density Func
 * The smaller the sample size, the fatter the tails get in a _T-distribution_.
 * After you approach 31 items, the _T-distribution_ is nearly indistinguishable from the [normal distribution](#the-normal-distribution), which neatly reflects the ideas behind the [central limit theorem](#the-central-limit-theorem).
 
-[<<Previous](../probability/README.md) | [Next>>]()
+[<<Previous](../probability/README.md) | [Next>>](../linear_algebra/README.md)
