@@ -1,4 +1,4 @@
-# Chapter 2: Descriptive and Inferential Statistics
+# Chapter 3: Descriptive and Inferential Statistics
 _Statistics_ is the practice of collecting and analyzing data to discover findings that are useful or predict what causes those findings to happen.
 ## What is Data?
 ### Descriptive Versus Inferential Statistics
