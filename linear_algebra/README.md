@@ -28,6 +28,18 @@ $$
 * **Visually**: connect one vector after the other and walk to the tip of the last vector. The point you end at is a new vector, the result of summing the two vectors.  
 ![Adding two vectors into a new vector](./images/vector-02.jpg)
 * It does not matter whether we add v before w or vice versa, which means it is _commutative_ and order of operation does not matter.
+### Scaling Vectors
+* _Scaling_ is growing or shrinking a vector’s length by multiplying or scaling it with a single value, known as a _scalar_.
+![Scaling a vector](./images/vector-03.jpg)
+* Mathematically, you multiply each element of the vector by the scalar value:
+
+$$
+\begin{align*}
+\vec{v} & = \begin{bmatrix} 3 \\ 1 \end{bmatrix} \\
+2\vec{v} & = 2\begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \times 2 \\ 1 \times 2 \end{bmatrix} = \begin{bmatrix} 6 \\ 2 \end{bmatrix}
+\end{align*}
+$$
+
 
 
 [<<Previous](../statistics_hypothesis_testing/README.md) | [Next>>]()
