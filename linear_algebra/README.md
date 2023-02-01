@@ -39,7 +39,17 @@ $$
 2\vec{v} & = 2\begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \times 2 \\ 1 \times 2 \end{bmatrix} = \begin{bmatrix} 6 \\ 2 \end{bmatrix}
 \end{align*}
 $$
-
-
+### Span and Linear Dependence
+* Using adding two vectors and scaling them, we can combine two vectors and scale them to create any resulting vector we want.
+* Figure below shows six examples of taking two vectors $\vec{v}$ and $\vec{w}$, and scaling and combining.
+    * These vectors $\vec{v}$ and $\vec{w}$, fixed in two different directions, can be scaled and added to create any new vector $\overrightarrow {v + w}$.
+![Scaling two added vectors allows us to create any new vector](./images/vector-04.jpg)
+* This whole space of possible vectors is called _span_.
+    * When we have two vectors in two different directions, they are _linearly independent_ and have this unlimited _span_.
+    * When two vectors exist in the same direction, or exist on the same line, the combination of those vectors is also stuck on the same line, limiting our _span_ to just that line. This makes them _linearly dependent_, as shown in Figure below.
+![Linearly dependent vectors](./images/vector-05.jpg)
+* A lot of problems become difficult or unsolvable when they are linearly dependent.
+    * A _linearly dependent_ set of equations can cause variables to disappear and make the problem unsolvable.
+    * If you have _linear independence_, that flexibility to create any vector you need from two or more vectors becomes invaluable to solve for a solution!
 
 [<<Previous](../statistics_hypothesis_testing/README.md) | [Next>>]()
