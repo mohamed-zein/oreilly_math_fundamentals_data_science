@@ -9,7 +9,7 @@
 
 $$
 \vec{v} = \begin{bmatrix}
-x \\
+x \newline
 y
 \end{bmatrix}
 $$
@@ -19,9 +19,9 @@ $$
 
 $$
 \begin{align*}
-\vec{v} & = \begin{bmatrix} 3 \\ 2 \end{bmatrix} \\
-\vec{w} & = \begin{bmatrix} 2 \\ -1 \end{bmatrix} \\
-\vec{v} + \vec{w} & = \begin{bmatrix} 3+2 \\ 2+ -1 \end{bmatrix} = \begin{bmatrix} 5 \\ 1 \end{bmatrix}
+\vec{v} & = \begin{bmatrix} 3 \newline 2 \end{bmatrix} \\
+\vec{w} & = \begin{bmatrix} 2 \newline -1 \end{bmatrix} \\
+\vec{v} + \vec{w} & = \begin{bmatrix} 3+2 \newline 2+ -1 \end{bmatrix} = \begin{bmatrix} 5 \newline 1 \end{bmatrix}
 \end{align*}
 $$
 
@@ -35,8 +35,8 @@ $$
 
 $$
 \begin{align*}
-\vec{v} & = \begin{bmatrix} 3 \\ 1 \end{bmatrix} \\
-2\vec{v} & = 2\begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \times 2 \\ 1 \times 2 \end{bmatrix} = \begin{bmatrix} 6 \\ 2 \end{bmatrix}
+\vec{v} & = \begin{bmatrix} 3 \newline 1 \end{bmatrix} \\
+2\vec{v} & = 2\begin{bmatrix} 3 \newline 1 \end{bmatrix} = \begin{bmatrix} 3 \times 2 \newline 1 \times 2 \end{bmatrix} = \begin{bmatrix} 6 \newline 2 \end{bmatrix}
 \end{align*}
 $$
 ### Span and Linear Dependence
@@ -63,9 +63,9 @@ In _linear transformations_ we use a vector to transform another vector in a fun
 
 $$
 \begin{align*}
-\hat{i} & = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \\
-\hat{j} & = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \\
-\text{basis} & = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}
+\hat{i} & = \begin{bmatrix} 1 \newline 0 \end{bmatrix} \\
+\hat{j} & = \begin{bmatrix} 0 \newline 1 \end{bmatrix} \\
+\text{basis} & = \begin{bmatrix} 1 & 0 \newline 0 & 1 \end{bmatrix}
 \end{align*}
 $$
 
@@ -78,8 +78,8 @@ $$
 
 $$
 \begin{align*}
-\begin{bmatrix} x_{new} \\ y_{new} \end{bmatrix} & = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} \\
-& = \begin{bmatrix} ax + by \\ cx + dy \end{bmatrix}
+\begin{bmatrix} x_{new} \newline y_{new} \end{bmatrix} & = \begin{bmatrix} a & b \newline c & d \end{bmatrix} \begin{bmatrix} x \newline y \end{bmatrix} \\
+& = \begin{bmatrix} ax + by \newline cx + dy \end{bmatrix}
 \end{align*}
 $$
 
