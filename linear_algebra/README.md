@@ -85,5 +85,39 @@ $$
 
 * This transformation of a vector by applying basis vectors is known as _matrix vector multiplication_ also known as _dot product_.
 
+## Matrix Multiplication
+* Think of _matrix multiplication_ as applying multiple transformations to a vector space.
+* Each transformation is like a function, where we apply the innermost first and then apply each subsequent transformation outward.
+
+$$
+\begin{align*}
+\begin{bmatrix} 1 & 1 \newline 0 & 1 \end{bmatrix} \begin{bmatrix} 0 & -1 \newline 1 & 0 \end{bmatrix} \begin{bmatrix} x \newline y \end{bmatrix} & = \begin{bmatrix} 1 & 1 \newline 0 & 1 \end{bmatrix} \left(\begin{bmatrix} 0 & -1 \newline 1 & 0 \end{bmatrix} \begin{bmatrix} x \newline y \end{bmatrix} \right) \\
+& = \begin{bmatrix} 1 & 1 \newline 0 & 1 \end{bmatrix} \begin{bmatrix} -y \newline x \end{bmatrix} \\
+& = \begin{bmatrix} x-y \newline x \end{bmatrix}
+\end{align*}
+$$
+
+> **Note**  
+> The order you apply each transformation matters!  
+> So matrix dot products are not commutative, meaning you cannot flip the order and expect the same result!
+
+
+* In the below example, we can also consolidate these two transformations by using this formula, apply‐ ing one transformation onto the last.
+
+$$
+\begin{bmatrix} a & b \newline c & d \end{bmatrix} \begin{bmatrix} e & f \newline g & h \end{bmatrix} = \begin{bmatrix} ae + bg & af + bh \newline ce + dy & cf + dh \end{bmatrix}
+$$
+
+* So we can actually consolidate these two separate transformations (rotation and shear) into a single transformation:
+
+$$
+\begin{align*}
+\begin{bmatrix} 1 & 1 \newline 0 & 1 \end{bmatrix} \begin{bmatrix} 0 & -1 \newline 1 & 0 \end{bmatrix} \begin{bmatrix} x \newline y \end{bmatrix} & = \begin{bmatrix} 1 & -1 \newline 1 & 0 \end{bmatrix} \begin{bmatrix} x \newline y \end{bmatrix} \\
+& = \begin{bmatrix} x-y \newline x \end{bmatrix}
+\end{align*}
+$$
+
+* To execute this in Python using NumPy, you can combine the two matrices simply using the `matmul()` or `@` operator
+
 
 [<<Previous](../statistics_hypothesis_testing/README.md) | [Next>>]()
