@@ -52,4 +52,38 @@ $$
     * A _linearly dependent_ set of equations can cause variables to disappear and make the problem unsolvable.
     * If you have _linear independence_, that flexibility to create any vector you need from two or more vectors becomes invaluable to solve for a solution!
 
+## Linear Transformations
+In _linear transformations_ we use a vector to transform another vector in a function-like manner.
+### Basis Vectors
+* _Basis Vectors_ are used to describe transformations on other vectors.
+    * They are two simple vectors $\hat{i}$ and $\hat{j}$
+    * They typi‐ cally have a length of 1 and point in perpendicular positive directions as visualized in Figure below:
+    ![Basis vectors $\hat{i}$ and $\hat{j}$](./images/vector-06.jpg)
+* Our basis vector is expressed in a 2 × 2 matrix, where the first column is $\hat{i}$ and the second column is $\hat{j}$:
+
+$$
+\begin{align*}
+\hat{i} & = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \\
+\hat{j} & = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \\
+\text{basis} & = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}
+\end{align*}
+$$
+
+* In _linear transformation_, We can use $\hat{i}$ and $\hat{j}$ to create any vector we want by **scaling** and **adding** them.
+* Generally, with linear transformations, there are four movements you can achieve, as shown in Figure below:
+![Four movements can be achieved with linear transformations](./images/vector-07.jpg)
+
+### Matrix Vector Multiplication
+* The formula to transform a vector $\vec{v}$ given basis vectors $\hat{i}$ and $\hat{j}$ packaged as a matrix is:
+
+$$
+\begin{align*}
+\begin{bmatrix} x_{new} \\ y_{new} \end{bmatrix} & = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} \\
+& = \begin{bmatrix} ax + by \\ cx + dy \end{bmatrix}
+\end{align*}
+$$
+
+* This transformation of a vector by applying basis vectors is known as _matrix vector multiplication_ also known as _dot product_.
+
+
 [<<Previous](../statistics_hypothesis_testing/README.md) | [Next>>]()
